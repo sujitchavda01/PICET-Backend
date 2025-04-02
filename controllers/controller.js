@@ -135,7 +135,7 @@ const uploadEvaluators = async (req, res) => {
 
                                 <p style="font-size: 16px; line-height: 1.5;">Please log in and change your password as soon as possible.</p>
                                 <div style="text-align: center; margin: 20px 0;">
-                                    <a href="#" style="background: #0047ab; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; display: inline-block; width: 80%; max-width: 200px; text-align: center;">Login</a>
+                                    <a href="https://evaluation.picet.in/" style="background: #0047ab; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; display: inline-block; width: 80%; max-width: 200px; text-align: center;">Login</a>
                                 </div>
                                 <p style="font-size: 16px; line-height: 1.5;">We look forward to your valuable contributions!</p>
                             </div>
@@ -492,7 +492,7 @@ const approveEvaluator = async (req, res) => {
 
                         <p style="font-size: 16px; line-height: 1.5;">Please log in and change your password as soon as possible.</p>
                         <div style="text-align: center; margin: 20px 0;">
-                            <a href="#" style="background: #0047ab; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; display: inline-block; width: 80%; max-width: 200px; text-align: center;">Login</a>
+                            <a href="https://evaluation.picet.in/" style="background: #0047ab; color: white; padding: 12px 20px; text-decoration: none; border-radius: 5px; font-size: 16px; display: inline-block; width: 80%; max-width: 200px; text-align: center;">Login</a>
                         </div>
                         <p style="font-size: 16px; line-height: 1.5;">We look forward to your valuable contributions!</p>
                     </div>
