@@ -8,11 +8,11 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({
-    origin: process.env.CLIENT_URL || 'https://evaluation.picet.in', // Update this with your frontend URL
-    credentials: true,
-    methods: ["GET", "POST","DELETE","PUT"],
-}));
+// app.use(cors({
+//     origin: process.env.CLIENT_URL || 'https://evaluation.picet.in', // Update this with your frontend URL
+//     credentials: true,
+//     methods: ["GET", "POST","DELETE","PUT"],
+// }));
 
 
 // Serve static files from the assets directory
