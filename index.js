@@ -8,6 +8,12 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
+
+// Ensure that environment variables are properly loaded
+if (!process.env.DATABASE_URL) {
+    console.error("❌ DATABASE_URL is missing. Check your environment variables.");
+    process.exit(1); // Stop the server
+}
 // app.use(cors({
 //     origin: process.env.CLIENT_URL || 'https://evaluation.picet.in', // Update this with your frontend URL
 //     credentials: true,
