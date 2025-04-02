@@ -2,10 +2,22 @@
     const bcrypt = require("bcryptjs");
     const crypto = require("crypto");
 
-    const sequelize = new Sequelize('picet', 'root', '', {
-        host: 'localhost',
+    const sequelize = new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
+        host: process.env.DB_HOST,
         dialect: 'mysql',
-        logging: false,
+        dialectOptions: {
+            ssl: {
+                require: true,
+                rejectUnauthorized: false // Important for some MySQL cloud providers
+            }
+        },
+        pool: {
+            max: 10,
+            min: 0,
+            acquire: 30000,
+            idle: 10000
+        },
+        logging: false
     });
 
     const User = sequelize.define("User", {

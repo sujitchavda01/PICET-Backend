@@ -14,11 +14,11 @@ if (!process.env.DATABASE_URL) {
     console.error("❌ DATABASE_URL is missing. Check your environment variables.");
     process.exit(1); // Stop the server
 }
-// app.use(cors({
-//     origin: process.env.CLIENT_URL || 'https://evaluation.picet.in', // Update this with your frontend URL
-//     credentials: true,
-//     methods: ["GET", "POST","DELETE","PUT"],
-// }));
+app.use(cors({
+    origin: process.env.CLIENT_URL || 'https://evaluation.picet.in', // Update this with your frontend URL
+    credentials: true,
+    methods: ["GET", "POST","DELETE","PUT"],
+}));
 
 
 // Serve static files from the assets directory
@@ -43,6 +43,8 @@ app.get('/', (req, res) => {
     res.send('Hello, API is running 🚀');
 });
 
-app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
-});
+// app.listen(PORT, () => {
+//     console.log(`🚀 Server running on http://localhost:${PORT}`);
+// });
+module.exports = app;
+
