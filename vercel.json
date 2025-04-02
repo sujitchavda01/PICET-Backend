@@ -12,10 +12,10 @@
         "dest": "/index.js"
       }
     ],
+  
     "functions": {
-      "index.js": {
-        "runtime": "nodejs18.x"
-      }
+      "api/*.js": { "runtime": "nodejs18.x" }
     }
+    
   }
   
